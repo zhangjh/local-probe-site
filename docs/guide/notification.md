@@ -2,17 +2,17 @@
 
 Local Probe 通过 Webhook 将监控结果推送到你的接收端。
 
-## 企微群推送
-
-1. 访问 [sct.ftqq.com](https://sct.ftqq.com/) 注册并获取 SendKey
-2. 在通知方式中选择"企业微信群机器人"
-3. 填入 Webhook 地址：`https://sctapi.ftqq.com/YOUR_KEY.send`
-
 ## 企业微信群机器人
 
-1. 在企业微信群中添加群机器人，获取 Webhook 地址
-2. 在通知方式中选择"企业微信"
-3. 填入 Webhook 地址
+1. 在企业微信中打开目标群聊
+2. 点击右上角「…」→「群机器人」→「添加」
+3. 创建机器人后，复制生成的 Webhook 地址
+4. 在 Local Probe 通知方式中选择"企业微信群机器人"
+5. 粘贴 Webhook 地址，保存配置
+
+::: tip
+Webhook 地址格式形如 `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxx`，注意保管好这个地址，拥有地址的人都可以向群里发消息。
+:::
 
 ## 推送内容
 
@@ -21,7 +21,6 @@ Local Probe 通过 Webhook 将监控结果推送到你的接收端。
 - 原帖链接
 - 标题或摘要
 - 关键词命中信息
-- 推荐处理优先级
 - 如已启用 AI，则附带摘要与回复样本
 
 你收到消息后，自行判断是否打开原帖、是否采用样本、是否进行回复。
