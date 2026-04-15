@@ -28,10 +28,6 @@ features:
     details: 企业微信群机器人，手机上看到推送报告可以直接跳转原帖。
 ---
 
-<div style="text-align: center; margin: 3rem auto 1rem; max-width: 720px;">
-  <img src="/images/dashboard.png" alt="Local Probe 主界面" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.12);" />
-</div>
-
 ---
 
 ## 😩 你是不是也这样？
@@ -65,11 +61,6 @@ features:
 
 整个过程你不需要一直开着电脑盯屏幕，也不需要反复手动搜索。软件在后台安静运行，有情况才通知你。开了AI增强的话，会根据配置的业务描述、回复模板和风格，生成参考回复，一起推送给你。
 
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/images/wechat-push.png" alt="企微推送效果" style="max-width: 360px; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.1);" />
-  <p style="color: #666; font-size: 0.875rem; margin-top: 0.5rem;">↑ 企微群收到的推送消息</p>
-</div>
-
 ---
 
 ## 🤖 配了 AI，体验更好
@@ -83,11 +74,6 @@ AI 是可选的增强功能，**不配也完全能用**。
 - ✍️ 生成 **回复样本**，你改改就能用
 
 AI 用的是你自己的接口（支持 OpenAI、DeepSeek 等），密钥存在你电脑的系统密钥链里，不经过任何第三方。
-
-<div style="text-align: center; margin: 2rem 0;">
-  <img src="/images/ai-result.png" alt="AI 分析结果" style="max-width: 640px; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.1);" />
-  <p style="color: #666; font-size: 0.875rem; margin-top: 0.5rem;">↑ AI 自动筛选、生成摘要和回复样本</p>
-</div>
 
 ---
 
