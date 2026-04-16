@@ -14,6 +14,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/guide/getting-started' },
+      { text: '获取正式版', link: '/guide/pricing' },
     ],
 
     sidebar: {
@@ -26,6 +27,7 @@ export default defineConfig({
             { text: 'AI 配置', link: '/guide/ai-config' },
             { text: '通知渠道', link: '/guide/notification' },
             { text: '常见问题', link: '/guide/faq' },
+            { text: '获取正式版', link: '/guide/pricing' },
           ],
         },
       ],
