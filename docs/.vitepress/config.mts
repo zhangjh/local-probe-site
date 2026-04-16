@@ -8,6 +8,8 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/icon.png' }],
+    ['script', { charset: 'UTF-8', id: 'LA_COLLECT', src: '//sdk.51.la/js-sdk-pro.min.js' }],
+    ['script', {}, 'LA.init({id:"LACPxYLMZjZJqlRu",ck:"LACPxYLMZjZJqlRu",autoTrack:true})'],
   ],
 
   themeConfig: {
