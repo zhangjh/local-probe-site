@@ -8,23 +8,57 @@
 
 ## 下载
 
-前往 [最新版本下载页](https://github.com/zhangjh/local-probe-site/releases/latest)，根据你的系统选择对应安装包：
+<div style="display: flex; flex-direction: column; gap: 12px; margin: 24px 0; max-width: 420px;">
+  <a id="btn-dl-mac-arm" href="https://github.com/zhangjh/local-probe-site/releases/latest"
+     style="display: flex; align-items: center; justify-content: center; background-color: var(--vp-c-brand-1); color: white; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; min-height: 48px; box-sizing: border-box; width: 100%;">
+    Mac (Apple 芯片) 下载 (获取中...)
+  </a>
+  <a id="btn-dl-mac-intel" href="https://github.com/zhangjh/local-probe-site/releases/latest"
+     style="display: flex; align-items: center; justify-content: center; background-color: var(--vp-c-brand-1); color: white; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; min-height: 48px; box-sizing: border-box; width: 100%;">
+    Mac (Intel 芯片) 下载 (获取中...)
+  </a>
+  <a id="btn-dl-win" href="https://github.com/zhangjh/local-probe-site/releases/latest"
+     style="display: flex; align-items: center; justify-content: center; background-color: var(--vp-c-brand-1); color: white; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; min-height: 48px; box-sizing: border-box; width: 100%;">
+    Windows 下载 (获取中...)
+  </a>
+</div>
 
-| 平台 | 文件名格式 |
-|---|---|
-| macOS (Apple 芯片 M1/M2/M3/M4) | `Local.Probe_*_aarch64.dmg` |
-| macOS (Intel 芯片) | `Local.Probe_*_x64.dmg` |
-| Windows | `Local.Probe_*_x64-setup.exe` |
-
-::: tip 国内下载慢？
-复制下载链接后，在前面加上 `https://gh-proxy.org/` 即可加速。例如：
-
-`https://gh-proxy.org/https://github.com/zhangjh/local-probe-site/releases/download/v1.0.3/Local.Probe_1.0.3_aarch64.dmg`
-:::
+<script>
+if (typeof window !== 'undefined') {
+  fetch('https://api.github.com/repos/zhangjh/local-probe-site/releases/latest')
+    .then(res => res.json())
+    .then(data => {
+      if (!data.assets || data.assets.length === 0) return;
+      const mirror = 'https://gh-proxy.org/';
+      const ver = data.tag_name;
+      data.assets.forEach(asset => {
+        const name = asset.name.toLowerCase();
+        const url = mirror + asset.browser_download_url;
+        if (name.includes('aarch64') && name.endsWith('.dmg')) {
+          const el = document.getElementById('btn-dl-mac-arm');
+          if (el) { el.href = url; el.innerText = 'Mac (Apple 芯片) 下载 (' + ver + ')'; }
+        }
+        if (name.includes('x64') && name.endsWith('.dmg')) {
+          const el = document.getElementById('btn-dl-mac-intel');
+          if (el) { el.href = url; el.innerText = 'Mac (Intel 芯片) 下载 (' + ver + ')'; }
+        }
+        if (name.includes('setup') && name.endsWith('.exe')) {
+          const el = document.getElementById('btn-dl-win');
+          if (el) { el.href = url; el.innerText = 'Windows 下载 (' + ver + ')'; }
+        }
+      });
+    })
+    .catch(err => console.error('Failed to fetch latest release:', err));
+}
+</script>
 
 ::: tip 不确定 Mac 芯片类型？
 点击左上角  → 关于本机，查看"芯片"一栏。显示 Apple M 开头选 Apple 芯片版，显示 Intel 选 Intel 版。
 :::
+
+如加速下载不可用，可前往 [GitHub Releases](https://github.com/zhangjh/local-probe-site/releases/latest) 直接下载。
+
+---
 
 ## macOS 安装
 
