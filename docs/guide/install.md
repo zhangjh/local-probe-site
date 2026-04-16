@@ -6,16 +6,27 @@
 - Windows 10 或更高版本
 - 约 200MB 磁盘空间
 
-## macOS
+## 下载
 
-根据你的芯片类型选择对应版本：
+前往 [最新版本下载页](https://github.com/zhangjh/local-probe-site/releases/latest)，根据你的系统选择对应安装包：
 
-- [Mac (Apple 芯片 M1/M2/M3/M4)](https://github.com/zhangjh/local-probe-site/releases/latest/download/Local.Probe_1.0.3_aarch64.dmg)
-- [Mac (Intel 芯片)](https://github.com/zhangjh/local-probe-site/releases/latest/download/Local.Probe_1.0.3_x64.dmg)
+| 平台 | 文件名格式 |
+|---|---|
+| macOS (Apple 芯片 M1/M2/M3/M4) | `Local.Probe_*_aarch64.dmg` |
+| macOS (Intel 芯片) | `Local.Probe_*_x64.dmg` |
+| Windows | `Local.Probe_*_x64-setup.exe` |
 
-::: tip 不确定自己的芯片类型？
+::: tip 国内下载慢？
+复制下载链接后，在前面加上 `https://gh-proxy.org/` 即可加速。例如：
+
+`https://gh-proxy.org/https://github.com/zhangjh/local-probe-site/releases/download/v1.0.3/Local.Probe_1.0.3_aarch64.dmg`
+:::
+
+::: tip 不确定 Mac 芯片类型？
 点击左上角  → 关于本机，查看"芯片"一栏。显示 Apple M 开头选 Apple 芯片版，显示 Intel 选 Intel 版。
 :::
+
+## macOS 安装
 
 下载后双击 `.dmg`，将 Local Probe 拖入 Applications 文件夹。
 
@@ -33,8 +44,6 @@ xattr -cr /Applications/Local\ Probe.app
 
 然后重新打开应用。
 
-## Windows
-
-[下载 Windows 安装包](https://github.com/zhangjh/local-probe-site/releases/latest/download/Local.Probe_1.0.3_x64-setup.exe)
+## Windows 安装
 
 双击运行安装程序，按提示完成安装。安装完成后从开始菜单或桌面快捷方式启动。
