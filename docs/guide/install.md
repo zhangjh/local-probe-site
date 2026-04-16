@@ -10,8 +10,8 @@
 
 根据你的芯片类型选择对应版本：
 
-- [Mac (Apple 芯片 M1/M2/M3/M4)](https://r2.zhangjh.cn/local-probe/Local.Probe_1.0.3_aarch64.dmg)
-- [Mac (Intel 芯片)](https://r2.zhangjh.cn/local-probe/Local.Probe_1.0.3_x64.dmg)
+- [Mac (Apple 芯片 M1/M2/M3/M4)](https://github.com/zhangjh/local-probe-site/releases/latest/download/Local.Probe_1.0.3_aarch64.dmg)
+- [Mac (Intel 芯片)](https://github.com/zhangjh/local-probe-site/releases/latest/download/Local.Probe_1.0.3_x64.dmg)
 
 ::: tip 不确定自己的芯片类型？
 点击左上角  → 关于本机，查看"芯片"一栏。显示 Apple M 开头选 Apple 芯片版，显示 Intel 选 Intel 版。
@@ -35,6 +35,6 @@ xattr -cr /Applications/Local\ Probe.app
 
 ## Windows
 
-[下载 Windows 安装包](https://r2.zhangjh.cn/local-probe/Local.Probe_1.0.3_x64-setup.exe)
+[下载 Windows 安装包](https://github.com/zhangjh/local-probe-site/releases/latest/download/Local.Probe_1.0.3_x64-setup.exe)
 
 双击运行安装程序，按提示完成安装。安装完成后从开始菜单或桌面快捷方式启动。
