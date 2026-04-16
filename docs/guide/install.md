@@ -10,14 +10,17 @@
 
 <div style="display: flex; flex-direction: column; gap: 12px; margin: 24px 0; max-width: 420px;">
   <a id="btn-dl-mac-arm" href="https://github.com/zhangjh/local-probe-site/releases/latest"
+     onclick="typeof LA !== 'undefined' && LA.track('download_mac_arm')"
      style="display: flex; align-items: center; justify-content: center; background-color: var(--vp-c-brand-1); color: white; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; min-height: 48px; box-sizing: border-box; width: 100%;">
     Mac (Apple 芯片) 下载 (获取中...)
   </a>
   <a id="btn-dl-mac-intel" href="https://github.com/zhangjh/local-probe-site/releases/latest"
+     onclick="typeof LA !== 'undefined' && LA.track('download_mac_intel')"
      style="display: flex; align-items: center; justify-content: center; background-color: var(--vp-c-brand-1); color: white; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; min-height: 48px; box-sizing: border-box; width: 100%;">
     Mac (Intel 芯片) 下载 (获取中...)
   </a>
   <a id="btn-dl-win" href="https://github.com/zhangjh/local-probe-site/releases/latest"
+     onclick="typeof LA !== 'undefined' && LA.track('download_win')"
      style="display: flex; align-items: center; justify-content: center; background-color: var(--vp-c-brand-1); color: white; padding: 14px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; min-height: 48px; box-sizing: border-box; width: 100%;">
     Windows 下载 (获取中...)
   </a>
