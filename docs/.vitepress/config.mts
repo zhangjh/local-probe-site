@@ -1,11 +1,25 @@
 import { defineConfig } from 'vitepress'
 
+const siteUrl = 'https://probe.zhangjh.cn'
+
 export default defineConfig({
   lang: 'zh-CN',
   title: 'Local Probe 线索雷达',
-  description: '本地运行的社媒监控工具，持续扫描目标平台公开内容，将结果推送到微信',
+  description: '本地运行的小红书监控工具，设好关键词自动盯着，AI 筛选高相关帖子推送到微信，帮你第一时间触达潜在客户',
+
+  sitemap: {
+    hostname: siteUrl,
+  },
 
   head: [
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-6lUYhjMBYX' }],
+    ['meta', { name: 'keywords', content: 'Local Probe,线索雷达,小红书监控,小红书获客,社媒监控,AI获客,本地运行,企业微信推送' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'Local Probe 线索雷达' }],
+    ['meta', { property: 'og:title', content: 'Local Probe 线索雷达 — 别再手动刷小红书找客户了' }],
+    ['meta', { property: 'og:description', content: '设好关键词，AI 自动筛选高相关帖子推送到微信，帮你第一时间触达潜在客户' }],
+    ['meta', { property: 'og:url', content: siteUrl }],
+    ['meta', { property: 'og:image', content: `${siteUrl}/images/dashboard.png` }],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/icon.png' }],
     ['script', { charset: 'UTF-8', id: 'LA_COLLECT', src: '//sdk.51.la/js-sdk-pro.min.js' }],

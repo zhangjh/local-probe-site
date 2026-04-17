@@ -1,3 +1,7 @@
+---
+description: 'Local Probe 下载安装指南，支持 macOS（Apple Silicon / Intel）和 Windows，含常见安装问题解决方案'
+---
+
 # 安装
 
 ## 系统要求

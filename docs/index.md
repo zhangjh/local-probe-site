@@ -1,5 +1,6 @@
 ---
 layout: home
+description: 'Local Probe 线索雷达 — 本地运行的小红书监控工具，设好关键词 AI 自动筛选，高相关帖子推送到微信，帮你第一时间触达潜在客户'
 
 hero:
   name: Local Probe

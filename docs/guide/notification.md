@@ -1,3 +1,7 @@
+---
+description: '配置企业微信群机器人 Webhook，接收 Local Probe 的小红书监控推送通知'
+---
+
 # 通知渠道
 
 Local Probe 通过 Webhook 将监控结果推送到你的接收端。
