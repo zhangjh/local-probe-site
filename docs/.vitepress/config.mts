@@ -12,7 +12,6 @@ export default defineConfig({
   },
 
   head: [
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-6lUYhjMBYX' }],
     ['meta', { name: 'keywords', content: 'Local Probe,线索雷达,小红书监控,小红书获客,社媒监控,AI获客,本地运行,企业微信推送' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Local Probe 线索雷达' }],
